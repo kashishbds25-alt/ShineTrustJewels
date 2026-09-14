@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ShineTrust Jewels | Digital Marketing</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#fffaf7;
+    color:#33252d;
+    line-height:1.6;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 7%;
+    background:#fff;
+    box-shadow:0 3px 15px rgba(70,30,70,.12);
+}
+
+.logo{
+    font-family:Georgia,serif;
+    font-size:25px;
+    font-weight:bold;
+    color:#632f68;
+}
+
+.logo span{
+    color:#c49a42;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#49383f;
+    font-size:14px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#9a5c9d;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    min-height:600px;
+    display:flex;
+    align-items:center;
+    padding:80px 8%;
+    background:
+    linear-gradient(
+        90deg,
+        rgba(65,30,68,.94),
+        rgba(94,49,96,.72),
+        rgba(94,49,96,.20)
+    ),
+    url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:650px;
+    color:white;
+}
+
+.hero small{
+    color:#f2cf7b;
+    letter-spacing:3px;
+    font-weight:bold;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:58px;
+    line-height:1.1;
+    margin:15px 0;
+}
+
+.hero h1 span{
+    color:#f2cf7b;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:560px;
+    margin-bottom:25px;
+}
+
+.hero-btn{
+    display:inline-block;
+    padding:13px 26px;
+    background:#d3aa5c;
+    color:#30252a;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ---------- COMMON ---------- */
+
+section{
+    padding:70px 8%;
+}
+
+.heading{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 45px;
+}
+
+.heading small{
+    color:#a27634;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+.heading h2{
+    font-family:Georgia,serif;
+    color:#5e3263;
+    font-size:38px;
+    margin:8px 0;
+}
+
+.heading p{
+    color:#74666d;
+}
+
+/* ---------- BUSINESS ---------- */
+
+#business{
+    background:#fffaf5;
+}
+
+.business-box{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.business-card{
+    background:white;
+    padding:27px 20px;
+    border-radius:18px;
+    border-top:4px solid #c49a42;
+    box-shadow:0 8px 25px rgba(70,40,50,.08);
+    transition:.3s;
+}
+
+.business-card:hover{
+    transform:translateY(-7px);
+}
+
+.business-card h3{
+    color:#66386a;
+    margin-bottom:8px;
+}
+
+.business-card p{
+    font-size:14px;
+    color:#74666d;
+}
+
+/* ---------- TARGET AUDIENCE ---------- */
+
+#audience{
+    background:#f5eaf5;
+}
+
+.audience-box{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.audience-card{
+    text-align:center;
+    padding:28px 18px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(70,40,70,.08);
+    transition:.3s;
+}
+
+.audience-card:hover{
+    transform:scale(1.03);
+}
+
+.audience-card .icon{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.audience-card h3{
+    color:#633669;
+    margin-bottom:8px;
+}
+
+.age{
+    display:inline-block;
+    background:#f4e8d3;
+    color:#654c29;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.audience-card p{
+    font-size:13px;
+    color:#74666d;
+}
+
+/* ---------- SEO ---------- */
+
+#seo{
+    background:#fff;
+}
+
+.seo-content{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+}
+
+.keyword-section{
+    margin-bottom:30px;
+}
+
+.keyword-section h3{
+    color:#633669;
+    margin-bottom:12px;
+}
+
+.keyword{
+    display:inline-block;
+    padding:10px 17px;
+    margin:7px;
+    border-radius:30px;
+    background:#f4e8d3;
+    color:#654c29;
+    font-size:14px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.keyword:hover{
+    background:#d4ae63;
+    color:white;
+    transform:translateY(-3px);
+}
+
+.seo-note{
+    margin-top:25px;
+    padding:20px;
+    background:#f8f0f8;
+    border-left:5px solid #8d5792;
+    border-radius:10px;
+    color:#62555e;
+}
+
+/* ---------- SOCIAL MEDIA ---------- */
+
+#social{
+    background:#432548;
+    color:white;
+}
+
+#social .heading h2{
+    color:white;
+}
+
+#social .heading p{
+    color:#dfd0e1;
+}
+
+.social-box{
+    max-width:1050px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.social-card{
+    padding:30px;
+    border-radius:18px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.14);
+    transition:.3s;
+}
+
+.social-card:hover{
+    background:rgba(255,255,255,.15);
+    transform:translateY(-6px);
+}
+
+.social-card .icon{
+    font-size:40px;
+}
+
+.social-card h3{
+    color:#f0cf7c;
+    margin:10px 0;
+}
+
+.social-card p{
+    color:#e1d4e3;
+    font-size:14px;
+}
+
+.week-plan{
+    max-width:1000px;
+    margin:40px auto 0;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.day{
+    padding:17px;
+    background:rgba(255,255,255,.08);
+    border-radius:12px;
+    text-align:center;
+}
+
+.day b{
+    color:#f0cf7c;
+}
+
+/* ---------- ADVERTISEMENT ---------- */
+
+#ad{
+    padding:0;
+}
+
+.advertisement{
+    min-height:520px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:70px 20px;
+    background:
+    linear-gradient(
+        rgba(67,37,72,.82),
+        rgba(67,37,72,.82)
+    ),
+    url("https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.ad-content{
+    max-width:800px;
+}
+
+.ad-content small{
+    color:#f2d17f;
+    letter-spacing:3px;
+}
+
+.ad-content h2{
+    font-family:Georgia,serif;
+    font-size:52px;
+    margin:15px 0;
+}
+
+.ad-content h2 span{
+    color:#f2d17f;
+}
+
+.ad-content p{
+    font-size:17px;
+    margin-bottom:18px;
+}
+
+.ad-features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:25px 0;
+}
+
+.ad-feature{
+    padding:10px 16px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:25px;
+    font-size:14px;
+}
+
+.ad-button{
+    display:inline-block;
+    padding:13px 28px;
+    background:#d2aa5d;
+    color:#30252a;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* ---------- EMAIL ---------- */
+
+#email{
+    background:#fffaf5;
+}
+
+.email-card{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(70,40,50,.09);
+    border-left:6px solid #c49a42;
+}
+
+.email-header{
+    background:#f4e8f5;
+    padding:18px;
+    border-radius:12px;
+    margin-bottom:25px;
+}
+
+.email-header h3{
+    color:#633669;
+}
+
+.email-card p{
+    margin:13px 0;
+    color:#645961;
+}
+
+.email-highlight{
+    background:#fff7e8;
+    padding:18px;
+    border-radius:12px;
+    margin:20px 0;
+}
+
+.email-highlight h4{
+    color:#633669;
+    margin-bottom:8px;
+}
+
+.email-list{
+    padding-left:20px;
+    color:#645961;
+}
+
+/* ---------- IMPROVEMENTS ---------- */
+
+#improve{
+    background:#f5eaf5;
+}
+
+.improvement-box{
+    max-width:950px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.improvement{
+    display:flex;
+    gap:15px;
+    background:white;
+    padding:22px;
+    border-radius:15px;
+    box-shadow:0 6px 20px rgba(70,40,70,.07);
+    transition:.3s;
+}
+
+.improvement:hover{
+    transform:translateX(5px);
+}
+
+.check{
+    font-size:23px;
+    color:#bd8e35;
+}
+
+.improvement h3{
+    color:#633669;
+    font-size:16px;
+}
+
+.improvement p{
+    font-size:13px;
+    color:#74666d;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background:#2c172f;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.footer-logo{
+    font-family:Georgia,serif;
+    font-size:28px;
+    color:#f0cf7c;
+}
+
+footer p{
+    color:#cdbdce;
+    font-size:13px;
+    margin-top:8px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:900px){
+
+    .business-box,
+    .audience-box{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .social-box{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .week-plan{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    nav{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .business-box,
+    .audience-box,
+    .social-box,
+    .week-plan,
+    .improvement-box{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:55px 6%;
+    }
+
+    .heading h2{
+        font-size:30px;
+    }
+
+    .ad-content h2{
+        font-size:38px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav>
+
+<div class="logo">
+Shine<span>Trust</span> Jewels
+</div>
+
+<ul>
+<li><a href="#business">Business</a></li>
+<li><a href="#audience">Audience</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#social">Social Media</a></li>
+<li><a href="#ad">Advertisement</a></li>
+<li><a href="#email">Email</a></li>
+<li><a href="#improve">Suggestions</a></li>
+</ul>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>
+Building Customer
+<span>Trust</span> for a Jewellery Store
+</h1>
+
+<p>
+Creating awareness, building credibility and
+developing long-term customer relationships
+through digital marketing.
+</p>
+
+<a href="#business" class="hero-btn">
+Explore Our Strategy
+</a>
+
+</div>
+
+</header>
+
+
+<!-- ================= 1. BUSINESS PROFILE ================= -->
+
+<section id="business">
+
+<div class="heading">
+
+<h2>Business Profile</h2>
+
+<p>
+A digital business profile designed to introduce
+the jewellery store and communicate its value to customers.
+</p>
+
+</div>
+
+<div class="business-box">
+
+<div class="business-card">
+
+<h3>Business Name</h3>
+
+<p>
+ShineTrust Jewels
+</p>
+
+</div>
+
+<div class="business-card">
+
+<h3>Business Type</h3>
+
+<p>
+Local Jewellery Retail Store
+</p>
+
+</div>
+
+<div class="business-card">
+
+<h3>Products</h3>
+
+<p>
+Gold jewellery, diamond jewellery, silver jewellery,
+rings, necklaces, earrings and bridal collections.
+</p>
+
+</div>
+
+<div class="business-card">
+
+<h3>USP</h3>
+
+<p>
+Quality jewellery, transparent information,
+customer guidance and reliable service.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= 2. TARGET AUDIENCE ================= -->
+
+<section id="audience">
+
+<div class="heading">
+
+<h2>Target Audience</h2>
+
+<p>
+Identifying the customers who are most likely
+to purchase jewellery from the business.
+</p>
+
+</div>
+
+<div class="audience-box">
+
+<div class="audience-card">
+
+<div class="icon">🎓</div>
+
+<h3>College Students</h3>
+
+<div class="age">Age: 18–24 years</div>
+
+<p>
+Affordable jewellery, trendy designs
+and social-media-friendly products.
+Perfect for casual wear, birthdays,
+college events and gifting.
+</p>
+
+</div>
+
+
+<div class="audience-card">
+
+<div class="icon">💼</div>
+
+<h3>Working Professionals</h3>
+
+<div class="age">Age: 22–40 years</div>
+
+<p>
+Elegant jewellery, quality products
+and dependable service for office wear,
+special occasions and professional events.
+</p>
+
+</div>
+
+
+<div class="audience-card">
+
+<div class="icon">👨‍👩‍👧</div>
+
+<h3>Young Families</h3>
+
+<div class="age">Age: 25–45 years</div>
+
+<p>
+Reliable jewellery for celebrations,
+gifting and important occasions such as
+anniversaries, festivals and family functions.
+</p>
+
+</div>
+
+
+<div class="audience-card">
+
+<div class="icon">💍</div>
+
+<h3>Bridal Customers</h3>
+
+<div class="age">Age: 21–40 years</div>
+
+<p>
+Bridal sets, wedding jewellery
+and personalized assistance for
+weddings and other important ceremonies.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= 3. SEO KEYWORDS ================= -->
+
+<section id="seo">
+
+<div class="heading">
+
+<h2>SEO Keywords</h2>
+
+<p>
+Suggested keywords that can help customers
+discover ShineTrust Jewels online.
+</p>
+
+</div>
+
+<div class="seo-content">
+
+<div class="keyword-section">
+
+<h3>Short-Tail Keywords</h3>
+
+<span class="keyword">Jewellery</span>
+<span class="keyword">Gold Jewellery</span>
+<span class="keyword">Diamond Jewellery</span>
+<span class="keyword">Bridal Jewellery</span>
+<span class="keyword">Silver Jewellery</span>
+<span class="keyword">Jewellery Store</span>
+
+</div>
+
+
+<div class="keyword-section">
+
+<h3>Long-Tail Keywords</h3>
+
+<span class="keyword">
+Trusted jewellery store near me
+</span>
+
+<span class="keyword">
+Best gold jewellery store near me
+</span>
+
+<span class="keyword">
+Certified gold jewellery for women
+</span>
+
+<span class="keyword">
+Affordable jewellery for college students
+</span>
+
+<span class="keyword">
+Trendy jewellery for young professionals
+</span>
+
+<span class="keyword">
+Bridal jewellery collection for weddings
+</span>
+
+</div>
+
+
+<div class="seo-note">
+
+<b>SEO Approach:</b>
+
+<p>
+Use relevant product, customer and location-based
+keywords in website headings, product descriptions,
+social media posts, image alt text and online business
+profiles to improve search visibility and attract
+the right audience.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= 4. SOCIAL MEDIA MARKETING ================= -->
+
+<section id="social">
+
+<div class="heading">
+
+<h2>Social Media Marketing Plan</h2>
+
+<p>
+Social media platforms can be used to increase
+awareness, engagement and customer trust.
+</p>
+
+</div>
+
+
+<div class="social-box">
+
+<div class="social-card">
+
+<div class="icon">📸</div>
+
+<h3>Instagram</h3>
+
+<p>
+New-launch reels, product photographs,
+feature highlights, jewellery styling content,
+festival collections and customer-focused posts.
+</p>
+
+</div>
+
+
+<div class="social-card">
+
+<div class="icon">📘</div>
+
+<h3>Facebook</h3>
+
+<p>
+Launch announcements, offers,
+customer stories, business updates,
+festival campaigns and jewellery information.
+</p>
+
+</div>
+
+
+<div class="social-card">
+
+<div class="icon">💬</div>
+
+<h3>WhatsApp</h3>
+
+<p>
+New-arrival messages, offer updates,
+personalized product information and
+communication with existing customers.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="week-plan">
+
+<div class="day">
+<b>Monday</b><br>
+New Collection
+</div>
+
+<div class="day">
+<b>Wednesday</b><br>
+Jewellery Tips
+</div>
+
+<div class="day">
+<b>Friday</b><br>
+Offer / Reel
+</div>
+
+<div class="day">
+<b>Sunday</b><br>
+Customer Review
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= 5. ADVERTISEMENT ================= -->
+
+<section id="ad">
+
+<div class="advertisement">
+
+<div class="ad-content">
+
+<small>ADVERTISEMENT DESIGN</small>
+
+<h2>
+Jewellery You Can
+<span>Trust</span>
+</h2>
+
+<p>
+Beautiful designs. Quality products.
+Transparent information. Trusted service.
+</p>
+
+<p>
+At ShineTrust Jewels, we believe that jewellery
+is more than an accessory. It represents memories,
+celebrations, relationships and special moments.
+</p>
+
+<p>
+Explore our collection of gold, diamond and silver
+jewellery designed for college students, working
+professionals, young families and bridal customers.
+</p>
+
+<div class="ad-features">
+
+<div class="ad-feature">✓ Quality Jewellery</div>
+
+<div class="ad-feature">✓ Transparent Information</div>
+
+<div class="ad-feature">✓ Trusted Service</div>
+
+<div class="ad-feature">✓ Customer Guidance</div>
+
+<div class="ad-feature">✓ Special Collections</div>
+
+</div>
+
+<p>
+<strong>
+Choose jewellery with confidence.
+Choose ShineTrust Jewels.
+</strong>
+</p>
+
+<a href="#business" class="ad-button">
+Visit ShineTrust Jewels
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= 6. EMAIL MARKETING ================= -->
+
+<section id="email">
+
+<div class="heading">
+
+<h2>Email Marketing</h2>
+
+<p>
+Building long-term customer relationships
+through personalized email communication.
+</p>
+
+</div>
+
+
+<div class="email-card">
+
+<div class="email-header">
+
+<h3>
+Discover the Latest Jewellery Collection
+</h3>
+
+</div>
+
+
+<p>
+Dear Customer,
+</p>
+
+
+<p>
+We are excited to introduce the latest jewellery
+collection at <strong>ShineTrust Jewels</strong>, featuring
+beautiful designs, quality products and trusted service.
+</p>
+
+
+<p>
+Whether you are looking for jewellery for everyday
+wear, a special celebration, gifting, professional
+occasions or your wedding, our collection offers
+different styles to suit your needs.
+</p>
+
+
+<div class="email-highlight">
+
+<h4>Why Choose ShineTrust Jewels?</h4>
+
+<ul class="email-list">
+
+<li>Quality jewellery and attractive designs</li>
+
+<li>Transparent product information</li>
+
+<li>Customer guidance and personalized assistance</li>
+
+<li>Collections for different occasions</li>
+
+<li>Updates about new arrivals and special offers</li>
+
+</ul>
+
+</div>
+
+
+<p>
+Stay connected with us to receive information about
+new jewellery launches, festival collections,
+special offers, styling ideas and customer updates.
+</p>
+
+
+<p>
+Visit our store to explore the latest collection
+and learn more about our products and available offers.
+</p>
+
+
+<p>
+We believe that jewellery shopping should be a
+comfortable, informative and trustworthy experience.
+Our goal is to build long-term relationships with
+our customers by providing reliable service and
+quality products.
+</p>
+
+
+<p>
+Thank you for choosing ShineTrust Jewels.
+We look forward to helping you find jewellery
+for your special moments.
+</p>
+
+
+<p>
+
+<b>
+Warm Regards,<br>
+ShineTrust Jewels
+</b>
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= 7. BUSINESS IMPROVEMENT ================= -->
+
+<section id="improve">
+
+<div class="heading">
+<h2>Business Improvement Suggestions</h2>
+
+<p>
+Digital strategies that can help the jewellery
+business improve customer trust and online presence.
+</p>
+
+</div>
+
+
+<div class="improvement-box">
+
+
+<div class="improvement">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>Post New Jewellery Launches</h3>
+
+<p>
+Promote new products through Instagram,
+Facebook and WhatsApp.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="improvement">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>Create Product Videos</h3>
+
+<p>
+Create short product-feature videos
+and comparison posts.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="improvement">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>Update Google Business Profile</h3>
+
+<p>
+Keep business information, photos,
+timings and updates current.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="improvement">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>Collect Customer Reviews</h3>
+
+<p>
+Encourage genuine customers to share
+their shopping experiences.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="improvement">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>Promote Digital Offers</h3>
+
+<p>
+Promote exchange offers and festival
+discounts through digital platforms.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="improvement">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>Track Digital Performance</h3>
+
+<p>
+Monitor which posts, keywords and offers
+receive the best customer response.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-logo">
+ShineTrust Jewels
+</div>
+
+</footer>
+
+</body>
+</html>
